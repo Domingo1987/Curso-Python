@@ -1,0 +1,1 @@
+El promedio de las calificaciones es: 6.666666666666667
