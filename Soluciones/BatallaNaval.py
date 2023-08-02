@@ -6,17 +6,22 @@ def crearTablero():
     return tablero
 
 # Colocar tres barcos en posiciones aleatorias
-
-    #x, y = np.random.randint(0, 5, size=2)
+#ndarray como argumento, nuestro tablero
+def colocarBarcos(tablero):
+    x, y = np.random.randint(0, 5, size=2)
+    print(f"Los valores de x e y son {x},{y}")
+    tablero[x,y]=1
 
 
 # Función para verificar si hay un barco o agua en las coordenadas dadas
 
-
-# Prueba la función con algunas coordenadas
-
+# Función para enmascarar el tablero
 
 #Programa>> a JUGAR!
-tab = crearTablero()
+tabReal = crearTablero()
 print("Tablero INICIAL\n")
-print(tab)
+print(tabReal)
+
+colocarBarcos(tabReal)
+print("Tablero con BARCOS\n")
+print(tabReal)
