@@ -1,5 +1,15 @@
 # procesador_texto.py
 
+from colorama import Fore, Back, Style
+
+# Colores para Fore y Back 
+# BLACK 0,RED 1,GREEN 2,YELLOW 3,BLUE 4,MAGENTA 5,CYAN 6,WHITE 7.
+Fores = [Fore.BLACK, Fore.RED]
+Backs = [Back.BLACK]
+
+# Estilos de colorama (Style)
+# RESET_ALL 0, DIM 1, NORMAL 2, BRIGHT 3.
+Styles = [Style.RESET_ALL,Style.DIM, Style.NORMAL, Style.BRIGHT]
 
 # Definición de la clase Procesador
 class Procesador:
@@ -18,5 +28,12 @@ class Procesador:
     def ajustar_margenes(texto, margen_izquierdo=10, margen_derecho=10):
         return ' ' * margen_izquierdo + texto + ' ' * margen_derecho
     
-    def pintar_palabra(self, palabra, fore, back):
-        pass
+    def pintar_palabra(self, palabra_clave, fore=0, back=0, style=0, **kwargs):
+        for word in self.texto.split():
+            if word == palabra_clave:
+                print(f"{Fores[fore]}{Backs[back]}{Styles[style]}{word}{Styles[0]}",**kwargs)
+            else:
+                print(f"<{word}>")
+           
+
+        

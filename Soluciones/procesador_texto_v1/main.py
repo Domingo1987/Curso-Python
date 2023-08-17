@@ -7,3 +7,5 @@ type(mi_texto2.texto)
 
 largo = Procesador.contar_palabras(mi_texto2.texto)
 print(f"La cantidad de palabras del texto es {largo}")
+
+Procesador.pintar_palabra(mi_texto2,"biblioteca", 1, 0, 3)
