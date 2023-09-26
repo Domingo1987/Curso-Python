@@ -1,7 +1,13 @@
 # Definimos la clase base Autor
 class Autor:
     def __init__(self, nombre):
-        self.nombre = nombre
+        self.__nombre = nombre
+
+    def setNombre(self, nombre):
+        self.__nombre = nombre
+
+    def getNombre(self):
+        return self.__nombre
 
 # Creamos una subclase Escritor que hereda de Autor
 class Escritor(Autor):
