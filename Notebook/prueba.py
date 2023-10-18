@@ -1,5 +1,13 @@
-lista = [11, 32, 25]
-lista_duplicada = lista + lista
+import pandas as pd
+import matplotlib.pyplot as plt
 
-for elem in lista_duplicada:
-    print(elem)
+
+data = {'frutas': ['manzana', 'plátano', 'uva'], 'cantidad': [10, 5, 12]}
+df = pd.DataFrame(data)
+#print(df)
+
+df.set_index('frutas').plot(kind='bar', title='Cantidad de Frutas', legend=False)
+plt.ylabel('Cantidad')
+plt.xlabel('Frutas')
+plt.tight_layout()
+plt.show()
