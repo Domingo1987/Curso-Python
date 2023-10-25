@@ -1,0 +1,12 @@
+// Árbol de Expresión
+digraph {
+	<__main__.Nodo object at 0x000001CD97D776D0> [label="+"]
+	<__main__.Nodo object at 0x000001CD97D776D0> -> <__main__.Nodo object at 0x000001CD98509950>
+	<__main__.Nodo object at 0x000001CD98509950> [label=5]
+	<__main__.Nodo object at 0x000001CD97D776D0> -> <__main__.Nodo object at 0x000001CD97D8C790>
+	<__main__.Nodo object at 0x000001CD97D8C790> [label="*"]
+	<__main__.Nodo object at 0x000001CD97D8C790> -> <__main__.Nodo object at 0x000001CD97D8C710>
+	<__main__.Nodo object at 0x000001CD97D8C710> [label=3]
+	<__main__.Nodo object at 0x000001CD97D8C790> -> <__main__.Nodo object at 0x000001CD97D8D0D0>
+	<__main__.Nodo object at 0x000001CD97D8D0D0> [label=4]
+}
