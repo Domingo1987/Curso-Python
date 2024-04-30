@@ -8,10 +8,20 @@ from graphviz import Digraph
 
 def visualizar_arbol(raiz, nombre):
     dot = Digraph(comment='Árbol de Expresión')
+    resultado = evaluar_expresion(raiz)
+    texto_superior = "El resultado de la operacion es " + str(resultado) + "\n\n" 
+   
+   # Agregar texto en la parte superior
+    with dot.subgraph() as s:
+        s.attr(rank='source')
+        s.node('top_text', texto_superior, shape='plaintext')
     
     def agregar_nodos(raiz, dot):
         if raiz is not None:
-            dot.node(str(raiz), str(raiz.val))
+            if ((raiz.val == '+') | (raiz.val == '*') | (raiz.val == '/') | (raiz.val == '-')):
+                dot.node(str(raiz), str(raiz.val), shape='ellipse', color='red')
+            else:
+                dot.node(str(raiz), str(raiz.val), shape='box', color='green')
             if raiz.izq is not None:
                 dot.edge(str(raiz), str(raiz.izq))
                 agregar_nodos(raiz.izq, dot)
@@ -20,6 +30,8 @@ def visualizar_arbol(raiz, nombre):
                 agregar_nodos(raiz.der, dot)
                 
     agregar_nodos(raiz, dot)
+
+   
     
     # Esta línea guardará la imagen en el mismo directorio con el nombre 'arbol_expresion.png'
     dot.render(nombre, format='png', cleanup=True)
@@ -92,7 +104,7 @@ def main():
     expresion = print_inorder(exp)
     resultado = evaluar_expresion(exp)
     print(f"\nExpresión: {expresion} = {resultado}")
-    
+
     # Aqui finaliza mi main
 
 if __name__ == "__main__":

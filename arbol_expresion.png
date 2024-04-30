@@ -1,12 +1,18 @@
 // Árbol de Expresión
 digraph {
-	<__main__.Nodo object at 0x000001CD97D776D0> [label="+"]
-	<__main__.Nodo object at 0x000001CD97D776D0> -> <__main__.Nodo object at 0x000001CD98509950>
-	<__main__.Nodo object at 0x000001CD98509950> [label=5]
-	<__main__.Nodo object at 0x000001CD97D776D0> -> <__main__.Nodo object at 0x000001CD97D8C790>
-	<__main__.Nodo object at 0x000001CD97D8C790> [label="*"]
-	<__main__.Nodo object at 0x000001CD97D8C790> -> <__main__.Nodo object at 0x000001CD97D8C710>
-	<__main__.Nodo object at 0x000001CD97D8C710> [label=3]
-	<__main__.Nodo object at 0x000001CD97D8C790> -> <__main__.Nodo object at 0x000001CD97D8D0D0>
-	<__main__.Nodo object at 0x000001CD97D8D0D0> [label=4]
+	{
+		rank=source
+		top_text [label="El resultado de la operacion es 17
+
+" shape=plaintext]
+	}
+	<__main__.Nodo object at 0x000001BF1AB55B50> [label="+" color=red shape=ellipse]
+	<__main__.Nodo object at 0x000001BF1AB55B50> -> <__main__.Nodo object at 0x000001BF1A40C490>
+	<__main__.Nodo object at 0x000001BF1A40C490> [label=5 color=green shape=box]
+	<__main__.Nodo object at 0x000001BF1AB55B50> -> <__main__.Nodo object at 0x000001BF1A40CD50>
+	<__main__.Nodo object at 0x000001BF1A40CD50> [label="*" color=red shape=ellipse]
+	<__main__.Nodo object at 0x000001BF1A40CD50> -> <__main__.Nodo object at 0x000001BF1A40CCD0>
+	<__main__.Nodo object at 0x000001BF1A40CCD0> [label=3 color=green shape=box]
+	<__main__.Nodo object at 0x000001BF1A40CD50> -> <__main__.Nodo object at 0x000001BF1A40D690>
+	<__main__.Nodo object at 0x000001BF1A40D690> [label=4 color=green shape=box]
 }

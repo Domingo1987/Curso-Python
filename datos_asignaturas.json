@@ -1,0 +1,49 @@
+{
+    "asignaturas": {
+        "Programaci\u00f3n 1": "1",
+        "Programaci\u00f3n 2": "2",
+        "L\u00f3gica": "1",
+        "Programaci\u00f3n 3": "3"
+    },
+    "resultados": {
+        "Programaci\u00f3n 1": [
+            [
+                "Pedro",
+                true
+            ],
+            [
+                "Emiliano",
+                true
+            ],
+            [
+                "Lucia",
+                false
+            ],
+            [
+                "Yonhatan",
+                true
+            ]
+        ],
+        "Programaci\u00f3n 2": [
+            [
+                "Maria",
+                true
+            ]
+        ],
+        "L\u00f3gica": [],
+        "Programaci\u00f3n 3": [
+            [
+                "Enzo",
+                false
+            ],
+            [
+                "Roberto",
+                false
+            ],
+            [
+                "Francisco",
+                false
+            ]
+        ]
+    }
+}
