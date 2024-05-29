@@ -4,10 +4,8 @@ from moviepy.editor import VideoFileClip
 video_path = 'Ejercicios//ConvertidorGIF//acceso.mp4'
 video = VideoFileClip(video_path)
 
-# Trim the complete duration of the video (8 seconds)
 # El video debe tener una ´duracion´.
 gif_clip = video.subclip(0, video.duration)
-
 
 # Define the path to save the full duration GIF
 gif_path = 'Ejercicios//ConvertidorGIF//duration_clip.gif'
