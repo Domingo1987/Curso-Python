@@ -5,11 +5,11 @@
 ## [1_2_Resolucion_de_problemas_y_algoritmos.ipynb](1_2_Resolucion_de_problemas_y_algoritmos.ipynb) - 2 Desafíos
 ## [1_3_Estrategias_de_resolucion_de_problemas.ipynb](1_3_Estrategias_de_resolucion_de_problemas.ipynb) - 0 Desafíos
 ## [2_4_Tipos_de_datos_y_operadores.ipynb](2_4_Tipos_de_datos_y_operadores.ipynb) - 5 Desafíos
-## [2_5_Entrada_y_Salida_de_datos.ipynb](2_5_Entrada_y_Salida_de_datos.ipynb) - 3 Desafíos
+## [2_5_Entrada_y_Salida_de_datos.ipynb](2_5_Entrada_y_Salida_de_datos.ipynb) - 5 Desafíos
 ## [2_6_Estructuras_de_control.ipynb](2_6_Estructuras_de_control.ipynb) - 3 Desafíos
 ## [3_1_Coleccion.ipynb](3_1_Coleccion.ipynb) - 0 Desafíos
 ## [3_7_Arreglos.ipynb](3_7_Arreglos.ipynb) - 4 Desafíos
-## [3_7_Matrices.ipynb](3_7_Matrices.ipynb) - 4 Desafíos
+## [3_7_Matrices.ipynb](3_7_Matrices.ipynb) - 6 Desafíos
 ## [3_8_Funciones.ipynb](3_8_Funciones.ipynb) - 4 Desafíos
 ## [3_8_Modulos.ipynb](3_8_Modulos.ipynb) - 3 Desafíos
 ## [3_9_Recursividad.ipynb](3_9_Recursividad.ipynb) - 3 Desafíos
@@ -27,4 +27,4 @@
 ## [5_17_Manejo_de_archivos.ipynb](5_17_Manejo_de_archivos.ipynb) - 0 Desafíos
 ## [Extra_colorama.ipynb](Extra_colorama.ipynb) - 0 Desafíos
 ## [Extra_random.ipynb](Extra_random.ipynb) - 0 Desafíos
-# El número Total de Desafíos es 50
+# El número Total de Desafíos es 54
